@@ -1,0 +1,7 @@
+
+DESCRIPCION PROGRAMA 2, USO DE GEOLOCALIZACIÓN
+- El programa genera un mapa centrandolo en una ubicación determinada en el código, se debe cambiar si se requiere.
+- Si el equipo desde el que se accede permite la localización, se generará un mensaje emergente indicando "Localizacion encontrada", en el punto que deteminó.
+- La geolocalización es aproximada, no lo suficientemente exacta para utilizarla para el seguimiento de objetos o personas.
+- Se debe tener en cuenta cambiar la API KEY, por el valor obtenido, al realizar el proceso correspondiente que se puede revisar en:
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key

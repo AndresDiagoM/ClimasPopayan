@@ -1,0 +1,6 @@
+
+DESCRIPCION PROGRAMA 4, PRESENTAR LAS ULTIMAS UBICACIONES RECOLECTADAS EN UN MAPA DE FORMA RESUMIDA, CON ARREGLOS
+- El programa presenta en un mapa las ubicaciones registradas en una tabla, de forma eficiente, utilizando arreglos.
+- Utiliza iconos personalizados (ubicacion.png) para ubicar las posiciones grabadas en la tabla de la base de datos.
+- Se debe tener en cuenta cambiar la API KEY, por el valor obtenido, al realizar el proceso correspondiente que se puede revisar en:
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key

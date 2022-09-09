@@ -1,0 +1,9 @@
+
+DESCRIPCION PROGRAMA 3, PERMITE ARRASTRAR UN MARCADOR PARA FIJAR UNA POSICION, 
+puede servir para ingresar al Stma donde están ubicadas las tarjetas microcontroladas que recibirán información.
+O para reubicar un punto, ubicado previamente.
+- El programa permite arrastrar con el mouse un marcador y ubicarlo para tomar las coordenadas de latitud y longitud.
+- El dato de posición, se graba en una tabla de la base de datos denominado puntos_tarjetas.
+- El programa a cargar es programa3.php que es la interfaz, el cual utiliza programa3a.php para ingresar el dato a la tabla de la base de datos.
+- Se debe tener en cuenta cambiar la API KEY, por el valor obtenido, al realizar el proceso correspondiente que se puede revisar en:
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key
