@@ -20,7 +20,7 @@
   <p align="center">
     IoT project
     <br />
-    <a href="https://github.com/AndresDiagoM/ClimasPopayan/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/AndresDiagoM/ClimasPopayan/tree/main/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/AndresDiagoM/ClimasPopayan">View Demo</a>
@@ -48,10 +48,6 @@
 
 
 
-
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -70,7 +66,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -109,11 +104,27 @@ The measurement devices must be able to be registered in the system by an admini
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The project was developed with the following technologies:
+
+<div align="center">
+
+ [![PHP][PHP.com]][PHP-url]
+ [![Arduino][Arduino.com]][Arduino-url]
+ [![Laravel][Laravel.com]][Laravel-url]
+ [![JQuery][JQuery.com]][JQuery-url]
+</div>
+
+For the hardware part, the following components were used:
+
+* [ESP32](https://www.espressif.com/en/products/socs/esp32)
+  
+![plot](./img/ESP32.jpg)
+
+* [DHT11](https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf)
+* [GPS-neo-6m](https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf)
+* [LCD-oled-arduino](https://www.arduino.cc/en/uploads/Guide/SSD1306.pdf)
 
 
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,64 +133,56 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps. You can also download the .zip file.
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/AndresDiagoM/ClimasPopayan
+    ```
+
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Configure the environment with xampp and arduino IDE.
 
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Install Arduino IDE
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   https://www.arduino.cc/en/software
    ```
-3. Install NPM packages
+2. Install xampp
    ```sh
-   npm install
+   https://www.apachefriends.org/es/index.html
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Configure the database
+   ```sh
+   Import the database from the file 'u483173002_practica1b.sql'
    ```
+4. Configure the .ino file
+   ```sh
+    Modify the variables 'ssid' and 'password' with the name and password of your wifi network.
+    Modify the variable 'host' with the IP of your server.
+    ```
+5. Upload the .ino file to the ESP32 card
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The web page has a login system, where the administrator can register new devices and view the data of each device.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The user can view the data of each device, in addition to the historical data.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+![plot](./img/grafica-datos.png)
 
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+_For more examples, please refer to the [Documentation](https://github.com/AndresDiagoM/ClimasPopayan/tree/main/docs)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -213,9 +216,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/AndresDiagoM/ClimasPopayan](https://github.com/AndresDiagoM/ClimasPopayan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,3 +262,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Arduino.com]: https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white
+[Arduino-url]: https://www.arduino.cc/
+[PHP.com]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
+[PHP-url]: https://www.php.net/
